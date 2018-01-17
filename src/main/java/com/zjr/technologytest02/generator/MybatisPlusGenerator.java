@@ -58,7 +58,9 @@ public class MybatisPlusGenerator {
         strategy.setNaming(NamingStrategy.underline_to_camel);// 表名生成策略
 //        strategy.setInclude(new String[] { "co_order", "co_sub_order", "co_order_detail", "co_order_trace", "ps_express_info", "ps_deliver_month_bill", "ca_user", "ca_account_role"});
         strategy.setInclude(new String[] { "co_cart" }); // 需要生成的表
+        //改包路径
         strategy.setSuperMapperClass("com.zjr.technologytest02.base.SuperMapper");
+        //改包路径
         strategy.setSuperEntityClass("com.zjr.technologytest02.base.SuperEntity");
         //strategy.setSuperServiceImplClass("com.cc.platform.base.SuperServiceImpl");
         mpg.setStrategy(strategy);
